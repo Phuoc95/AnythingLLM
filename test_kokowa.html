@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kokowa - Smart Pet Care Ecosystem</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: #fafafa;
+      color: #171717;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      -webkit-font-smoothing: antialiased;
+    }
+    header {
+      background: #ffffff;
+      border-bottom: 1px solid #e5e5e5;
+      padding: 16px 32px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      font-size: 16px;
+      font-weight: 700;
+      color: #171717;
+      letter-spacing: -0.02em;
+    }
+    .badge {
+      font-size: 12px;
+      font-weight: 500;
+      color: #525252;
+      background: #f5f5f5;
+      border: 1px solid #e5e5e5;
+      padding: 4px 10px;
+      border-radius: 6px;
+    }
+    main {
+      flex: 1;
+      max-width: 800px;
+      margin: 48px auto;
+      padding: 0 24px;
+    }
+    .hero {
+      margin-bottom: 40px;
+    }
+    .hero h1 {
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      line-height: 1.25;
+      margin-bottom: 12px;
+      color: #171717;
+    }
+    .hero p {
+      font-size: 15px;
+      color: #737373;
+      line-height: 1.6;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin-bottom: 32px;
+    }
+    .card {
+      background: #ffffff;
+      border: 1px solid #e5e5e5;
+      border-radius: 8px;
+      padding: 20px;
+    }
+    .card h3 {
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 6px;
+      color: #171717;
+    }
+    .card p {
+      font-size: 13px;
+      color: #737373;
+      line-height: 1.5;
+    }
+    .test-box {
+      background: #ffffff;
+      border: 1px solid #e5e5e5;
+      border-radius: 8px;
+      padding: 20px;
+    }
+    .test-box h4 {
+      font-size: 13px;
+      font-weight: 600;
+      color: #171717;
+      margin-bottom: 8px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .test-box ul {
+      padding-left: 18px;
+      color: #525252;
+      font-size: 13px;
+      line-height: 1.7;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Kokowa</div>
+    <div class="badge">Workspace: wp_kokowa</div>
+  </header>
+
+  <main>
+    <div class="hero">
+      <h1>Hệ sinh thái chăm sóc sức khỏe thú cưng thông minh</h1>
+      <p>Giải pháp AIoT bảo vệ thú cưng với vòng cổ GPS thông minh và mạng lưới bác sĩ thú y trực tuyến TeleVet 24/7 tại TP.HCM.</p>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Kokowa Smart Collar</h3>
+        <p>Vòng cổ theo dõi vị trí GPS, nhịp tim, chống nước IP68 (bảo hành 12 tháng).</p>
+      </div>
+      <div class="card">
+        <h3>TeleVet 24/7</h3>
+        <p>Kết nối video trực tiếp với mạng lưới hơn 200 bác sĩ thú y đạt chuẩn quốc tế.</p>
+      </div>
+      <div class="card">
+        <h3>Bảng Giá Dịch Vụ</h3>
+        <p>Care Basic: 199.000đ/tháng.<br>Care VIP: 499.000đ/tháng (bảo hiểm 15 triệu).</p>
+      </div>
+    </div>
+
+    <div class="test-box">
+      <h4>Gợi ý kiểm tra bot Kokowa (góc dưới bên phải):</h4>
+      <ul>
+        <li><strong>Đúng dự án:</strong> "Ai là CEO của Kokowa?", "Chính sách bảo hành vòng cổ thế nào?"</li>
+        <li><strong>Câu hỏi bẫy:</strong> "Bên bạn có làm tem Blockchain xuất khẩu thanh long không?"</li>
+      </ul>
+    </div>
+  </main>
+
+  <!-- AnythingLLM Embed Widget for Kokowa Workspace -->
+  <script
+    data-embed-id="f2164236-71de-480e-ae0d-61988ddd0f55"
+    data-base-api-url="http://localhost:3001/api/embed"
+    src="http://localhost:3001/embed/anythingllm-chat-widget.min.js">
+  </script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+services:
+  anythingllm:
+    image: mintplexlabs/anythingllm:latest
+    container_name: anythingllm
+    restart: unless-stopped
+    ports:
+      - "3001:3001"
+    cap_add:
+      - SYS_ADMIN
+    environment:
+      - SERVER_PORT=3001
+      - STORAGE_DIR=/app/server/storage
+    volumes:
+      - ./storage:/app/server/storage
+      - ./storage/.env:/app/server/.env
+    # Allow container to communicate with host machine services (e.g., Ollama on 11434)
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
